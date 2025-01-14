@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    
+</head>
+<body>
+    <header><img src="./logo/image.png" alt=""></header>
+
+    <main class="content">
+        
+
+            <section class="Produtos">
+                <div class="cards">
+                    <h1>Meus Produtos</h1>
+                    
+                    <ul class="camisas__container" alt="vendas camisas" data-lista>
+
+                    </ul> 
+                    
+                </div>
+
+            </section>
+       
+            <section class="Adicionar_Produtos">
+                <h1>Adicionar Produtos</h1>
+
+                <main class="form">
+
+                    <form class="form" data-formulario>
+                           
+                            <div class="formulario__campo">
+                                <input name="time" class="campo__escrita" required placeholder="Digite o nome do time..." 
+                                id='time' data-time />
+                            </div>
+            
+            
+                            <div class="formulario__campo">
+                                <input name="preco" class="campo__escrita" required placeholder="Digite o preco"
+                                    id='preco' data-preco />
+                            </div>
+            
+                            <div class="formulario__campo">
+                                <input name="imagem" class="campo__escrita" required placeholder="Insira a url da imagem"
+                                    id='imagem' data-imagem />
+                            </div>
+                            
+                            <div class="btn__form">
+                                <input name="Cadastrar" value="Cadastrar" class="formulario__botao" type="submit"/>
+                                <input class="formulario__botao" type="reset" value="Limpar"/>
+                            </div>
+                            
+                    </form>
+            
+                </main>
+
+
+
+                <!-- <div class="form" data-formulario>
+                  
+                    <input id="time" type="text" placeholder="Nome do time..." data-time>
+                    <input id="preco" placeholder="Valor da Camisa..." data-preco>
+                    <input id="imagem" type="url" placeholder="URL Imagem..." data-imagem>
+
+                    <div class="btn__form" data-form >
+                        <input type="submit" value="Cadastrar" >
+                        <input type="button" value="Limpar" >
+                        
+                    </div>
+                   
+                </div> -->
+            </section>
+            
+    
+    </main>
+    
+    <script src="mostrarCamisas.js" type="module"></script>
+    <script src="criarCamisa.js" type="module"></script>
+
+</body>
+
+<footer>
+    <img id="logo_rodape" src="./logo/image.png" alt="logo alura geek" />
+
+
+    <p>
+          <a href="https://" target="_blank">
+            <img src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/>
+          </a>
+          <a href="https://"  target="_blank">
+            <img src="https://img.icons8.com/color/48/github--v1.png" alt="github"/>
+          </a>
+    </p>
+   
+    <p id="desenvolvedor">&copy; 2025 Desenvolvido por <span id="destaque_nome_rodape">Cristiano Araújo</span></p>
+
+</footer>
+<script type="module" src="database/js/controllers/main.js"></script>
+</html>
